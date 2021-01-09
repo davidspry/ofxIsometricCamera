@@ -14,7 +14,8 @@ void Sketch::update()
 {
     phase = phase + 0.005f;
     phase = phase - static_cast<int>(phase > TWO_PI) * TWO_PI;
-    camera.transition(std::sinf(phase));
+    const float t = std::abs(std::sinf(phase));
+    camera.transition(t);
 }
 
 void Sketch::draw()

@@ -78,7 +78,7 @@ void ofxIsometricCamera::setScale(float scale)
 
 void ofxIsometricCamera::setIsometricOrientation(uint8_t orientation) noexcept
 {
-    const auto index = static_cast<uint8_t>(static_cast<bool>(orientation));
+    const auto index = static_cast<bool>(orientation);
     const auto k = static_cast<IsometricOrientation>(index);
     
     setIsometricOrientation(k);
