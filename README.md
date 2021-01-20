@@ -9,10 +9,6 @@ To use this add-on with openFrameworks:
   
 See the included Xcode project, 'ofxIsometricCameraDemo', for a simple usage demo.
   
-## Issues
-
-- The conversion of screen-space positions to world-space positions is currently inaccurate when the camera is using its isometric view. This is demonstrated in the included demo project.
-  
 ## Usage
 
 Add an instance of the camera to your project.
